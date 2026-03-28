@@ -176,7 +176,6 @@ The `utils/distance.js` file uses the **Haversine formula** to calculate straigh
 
 This project is deployed on [Railway](https://railway.app).
 
-**Live URL:** `https://your-app.up.railway.app`
 
 **Test the live endpoints:**
 
