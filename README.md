@@ -51,7 +51,7 @@ A Node.js REST API to manage school data and sort schools by proximity using the
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/school-api.git
+git clone https://github.com/Ritish-007/school-api-assignment
 cd school-api
 ```
 
@@ -180,8 +180,8 @@ This project is deployed on [Railway](https://railway.app).
 **Test the live endpoints:**
 
 ```
-POST https://your-app.up.railway.app/api/addSchool
-GET  https://your-app.up.railway.app/api/listSchools?latitude=28.6&longitude=77.2
+POST http://school-api-assignment-production-3cba.up.railway.app/api/addSchool
+GET  http://school-api-assignment-production-3cba.up.railway.app/api/listSchools?latitude=28.6&longitude=77.2
 ```
 
 ### Environment variables on Railway
@@ -202,12 +202,12 @@ Import these two requests into Postman:
 
 **Add School**
 - Method: `POST`
-- URL: `{{base_url}}/api/addSchool`
+- URL: `http://school-api-assignment-production-3cba.up.railway.app/api/addSchool`
 - Body: raw JSON with `name`, `address`, `latitude`, `longitude`
 
 **List Schools**
 - Method: `GET`
-- URL: `{{base_url}}/api/listSchools?latitude=28.6139&longitude=77.2090`
+- URL: `http://school-api-assignment-production-3cba.up.railway.app/api/listSchools?latitude=28.6139&longitude=77.2090`
 
 Set `base_url` as a Postman environment variable to switch between local and production easily.
 
