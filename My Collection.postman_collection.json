@@ -1,0 +1,71 @@
+{
+  "info": {
+    "_postman_id": "9b90c41f-fab5-4ea5-9bed-942730f735f3",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51238419",
+    "_collection_link": "https://go.postman.co/collection/51238419-9b90c41f-fab5-4ea5-9bed-942730f735f3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/api/addSchool",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Super public School\",\r\n  \"address\": \"Delhi\",\r\n  \"latitude\": 26.7041,\r\n  \"longitude\": 78.1025\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/addSchool",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/api/listSchools",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/listSchools?latitude=28.6&longitude=77.2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "28.6"
+            },
+            {
+              "key": "longitude",
+              "value": "77.2"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
